@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    @yield('headcontent')
+    @include('includes._headcontentstandard')
   </head>
   <body>
     @include('includes._header')
-    @yield('bodycontent')
+    @yield('content')
     @include('includes._footer')
+    <!-- This will let us create a background independent of other elements. -->
+    @yield('background')
   </body>
 </html>
