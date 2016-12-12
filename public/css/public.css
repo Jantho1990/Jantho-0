@@ -12,6 +12,7 @@ body {
   color: #EFEFEF;
   background-color: #132639;
   background-image: linear-gradient(225deg, #336699 0%, #132639 100%);
+  /*background-image: url('/images/coffee_beans.jpg');*/
   height: 100vh;
 }
 
@@ -22,6 +23,21 @@ body p {
   text-align: left;
   margin: 1.5em 0;
 }
+
+/**
+ * Copy
+ */
+.copy {
+  margin-top: 45vh;
+}
+
+.copy:last-child {
+  margin-bottom: 45vh;
+}
+
+/**
+ * Headings
+ */
 
 h1 {
   font-weight: 700;
@@ -94,8 +110,29 @@ header h2 span {
 }
 
 .header-mid ul {
-  text-align: left;
   list-style: none;
+}
+
+.header-mid .contact-me li {
+  display: inline-block;
+  margin: 0 0.5em;
+  transform: all ease-in-out 0.25s;
+}
+
+.header-mid .contact-me li a {
+  text-decoration: none;
+  color: #EFEFEF;
+  font-size: 1.25em;
+  transform: all ease-in-out 0.25s;
+}
+
+.header-mid .contact-me li:hover {
+  margin: -1em 0.35em;
+}
+
+.header-mid .contact-me li:hover a {
+  color: #FFF;
+  font-size: 1.5em;
 }
 
 .header-lower {
@@ -123,18 +160,18 @@ footer {
   width: 100%;
   text-align: right;
   z-index: 1;
+  display: none;
 }
 
 footer .copyright {
-  padding: 1.5em 1em;
-  text-align: right;
+
 }
 
 /**
  * Main App
  */
 #main-app {
-  position: fixed;
+  /*position: fixed;
   left: 60vw;
   top: 45%;
   -webkit-transform: translate(-50%, -50%);
@@ -143,7 +180,7 @@ footer .copyright {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: auto;
-  margin: auto;
+  margin-left: 280px;*/
   text-align: center;
 }
 
@@ -154,3 +191,35 @@ footer .copyright {
 /**
  * Misc
  */
+
+
+/**
+ * Mobile
+ */
+@media screen and (max-width: 767px){
+  header {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: auto;
+    width: 100%;
+  }
+  #nav {
+    display: none;
+  }
+  .header-mid, .header-lower {
+    display: none;
+  }
+  .copy {
+    margin-top: 25vh;
+  }
+  .copy:last-child {
+    margin-bottom: 25vh;
+  }
+  footer {
+    display: block;
+    position: static;
+    text-align: center;
+  }
+}

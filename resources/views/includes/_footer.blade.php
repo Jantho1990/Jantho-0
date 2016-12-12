@@ -1,4 +1,4 @@
 <footer class="container-fluid">
-  <span class="copyright">Copyright Joshua Anthony 2016</span>
+  <span class="copyright">Copyright 2016 Joshua Anthony.<br>All rights reserved.</span>
 </footer>
 @include('includes._bodyend')

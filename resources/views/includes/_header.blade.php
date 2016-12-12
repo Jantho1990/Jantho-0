@@ -13,29 +13,20 @@
     <hr>
     <nav id="nav">
       <ul>
-        <li>
-          <a href="#">
-            <i class="fa fa-caret-right" aria-hidden="true"></i> Who I Am
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-caret-right" aria-hidden="true"></i> What I Do
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-caret-right" aria-hidden="true"></i> What I Like
-          </a>
-        </li>
+        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Who I Am</a></li>
+        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> What I Do</a></li>
+        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Where I Work</a></li>
+        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Spare Time</a></li>
+        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Want To Know More?</a></li>
       </ul>
     </nav>
   </div>
   <div class="header-mid">
-    <img src="{!! $grav_url !!}" alt="and this is supposed to be Josh Anthony's face">
-    <ul>
-      <li>jantho1990@gmail.com</li>
-      <li><a href="https://github.com/Jantho1990">github.com/jantho1990</a></li>
+    <img class="my-face" src="{!! $grav_url !!}" alt="and this is supposed to be Josh Anthony's face">
+    <ul class="contact-me">
+      <li><a target="_blank" href="mailto:jantho1990@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" href="https://github.com/Jantho1990"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/josh-anthony-138818bb?trk=hp-identity-name"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
     </ul>
   </div>
   <div class="header-lower">
